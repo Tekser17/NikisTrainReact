@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Main from './main/App';
-import Error404 from "./errors/404";
-import Problems from "./problems/Problems"
+import Main from '../modules/main/App';
+import Error404 from "../modules/errors/404";
+import Problems from "../modules/problems/Problems"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
