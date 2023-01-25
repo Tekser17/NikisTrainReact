@@ -1,6 +1,8 @@
 import {Component} from "react";
 import Header from "../header/Header"
 import TaskList from "./modules/TaskList";
+import Filter from "./modules/Filter";
+import FilterButtons from "./modules/FilterButtons";
 
 const initialData = [
     {
@@ -68,7 +70,13 @@ export default class Problems extends Component {
         return (
             <>
                 <Header/>
-                <TaskList list={initialData}/>
+                <div className="inline-flex pt-10 pl-64 space-x-5">
+                    <Filter/>
+                    <TaskList list={initialData}/>
+                </div>
+                <div className="pt-2.5 pl-64 space-x-2.5">
+                    <FilterButtons/>
+                </div>
             </>
         );
     }
