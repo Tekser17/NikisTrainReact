@@ -5,6 +5,7 @@ import Error404 from "./modules/errors/404";
 import Problems from "./modules/problems/Problems"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Register from "./modules/signup/Register";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,8 @@ root.render(
             <Routes>
                 <Route path="" element ={<Main />}/>
                 <Route path="problems" element ={<Problems />}/>
-                <Route path="*" element ={<Error404/>}/>
+                <Route path="register" element={<Register />}></Route>
+                <Route path="*" element ={<Error404 />}/>
             </Routes>
         </BrowserRouter>
   </React.StrictMode>

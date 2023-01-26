@@ -39,6 +39,18 @@ export default class Header extends Component{
                             </span>
                         </Link>
                     </div>
+                    <div className="pl-2 inline text-lg space-x-1 font-medium align-middle text-right">
+                        <Link to="/problems">
+                            <span className="px-3 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
+                                Войти
+                            </span>
+                        </Link>
+                        <Link to="/register">
+                            <span className="px-3 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 justify-self-end">
+                                Регистрация
+                            </span>
+                        </Link>
+                    </div>
                 </div>
                 <hr></hr>
             </>
